@@ -128,8 +128,6 @@ NaukriWallah_By_BugWriters/
 
 ## Contributors
 
-Team -Bug_Writers
-
 | Name | GitHub | Roll Number |  
 |-------|--------|-------------|  
 | **Anmol Jain** | [Anmol Jain](https://github.com/Anmoljain2005) | 230008009 |  
@@ -147,10 +145,4 @@ This project is a part of the course CS-218: Programmable and Interoperable Bloc
 
 ---
 
-> Built by **Bug_Writers** (DeCentrix) | Indian Institute of Technology Indore
-
----
-
-Would you also like a **smaller badge section** (example: `Built with Hardhat`, `OpenZeppelin Secured`, `MetaMask Ready`) for the top of the `README.md`? 🚀🎯  
-It'll make the GitHub page look even more polished!  
-(If yes, I can add that quickly too!) ✅
+> Built by **Bug_Writers** | Indian Institute of Technology Indore
