@@ -128,8 +128,8 @@ NaukriWallah_By_BugWriters/
 
 ## Report and Presentation
 
-Link to PPT : [Project_Presentation.pdf](https://github.com/Anmoljain2005/NaukriWallah_By_BugWriters/blob/main/Project_Presentation.pdf)
-Link to Report : [Project_Report.pdf](https://github.com/Anmoljain2005/NaukriWallah_By_BugWriters/blob/main/Project_Report.pdf)
+- Link to PPT : [Project_Presentation.pdf](https://github.com/Anmoljain2005/NaukriWallah_By_BugWriters/blob/main/Project_Presentation.pdf)
+- Link to Report : [Project_Report.pdf](https://github.com/Anmoljain2005/NaukriWallah_By_BugWriters/blob/main/Project_Report.pdf)
 
 ---
 
