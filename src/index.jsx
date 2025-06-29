@@ -6,6 +6,10 @@ import './index.css'
 import App from './App'
 import { initCometChat } from './services/chat'
 
+window.addEventListener('unhandledrejection', (event) => {
+  console.error('⚠️ Unhandled Promise Rejection:', event.reason)
+})
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 initCometChat().then(()=> {

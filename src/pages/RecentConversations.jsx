@@ -10,10 +10,24 @@ const RecentConversations = () => {
   const [currentUser] = useGlobalState('currentUser')
 
   useEffect(() => {
-    getConversations().then((users) =>
-      setGlobalState('recentConversations', users)
-    )
+    const loadConversations = async () => {
+      if (!currentUser || !currentUser.uid) return // 🔒 Prevent API call if not logged in
+
+      try {
+        const users = await getConversations()
+        setGlobalState('recentConversations', users)
+      } catch (error) {
+        console.error('❌ getConversations error:', error)
+      }
+    }
+
+    loadConversations()
   }, [currentUser])
+
+  // ✅ Place this inside the component body
+  if (!currentUser || !currentUser.uid) {
+    return <div className="text-center mt-8">🔒 Please log in to view your chats.</div>
+  }
 
   return (
     <>

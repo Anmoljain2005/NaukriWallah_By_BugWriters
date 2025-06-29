@@ -7,6 +7,16 @@ const CONSTANTS = {
   AUTH_KEY: process.env.REACT_APP_COMET_CHAT_AUTH_KEY,
 }
 
+const reportError = (error, context = '') => {
+  if (error instanceof Error) {
+    console.error(`❌ [${context}] ${error.message}`)
+  } else if (typeof error === 'object' && error !== null) {
+    console.error(`❌ [${context}]`, JSON.stringify(error, null, 2))
+  } else {
+    console.error(`❌ [${context}]`, error)
+  }
+}
+
 const initCometChat = async () => {
   const appID = CONSTANTS.APP_ID
   const region = CONSTANTS.REGION

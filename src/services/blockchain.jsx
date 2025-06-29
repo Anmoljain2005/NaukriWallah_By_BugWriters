@@ -4,6 +4,14 @@ import address from '../abis/contractAddress.json'
 import { ethers } from 'ethers'
 import { logOutWithCometChat } from './chat'
 
+const reportError = (error) => {
+  if (typeof error === 'object' && error !== null && error.message) {
+    console.error('❌ Error:', error.message)
+  } else {
+    console.error('❌ Unknown error:', JSON.stringify(error))
+  }
+}
+
 const { ethereum } = window
 const ContractAddress = address.address
 const ContractAbi = abi.abi
